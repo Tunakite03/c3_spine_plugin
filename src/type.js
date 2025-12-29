@@ -1,6 +1,7 @@
 "use strict";
 {
-    const C3 = self.C3;
+    const C3 = globalThis.C3;
+    const SDK = globalThis.SDK;
     
     const PLUGIN_CLASS = SDK.Plugins.Gritsenko_Spine;
 

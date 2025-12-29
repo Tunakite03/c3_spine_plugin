@@ -1,9 +1,10 @@
 "use strict";
 {
-    const C3 = self.C3;
+    const C3 = globalThis.C3;
+    const SDK = globalThis.SDK;
     
     const PLUGIN_ID = "Gritsenko_Spine";
-    const PLUGIN_VERSION = "2.9.1";
+    const PLUGIN_VERSION = "2.9.2";
     const PLUGIN_CATEGORY = "general";
 
     const PLUGIN_CLASS = SDK.Plugins.Gritsenko_Spine = class SpinePlugin extends SDK.IPluginBase {

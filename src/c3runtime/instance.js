@@ -2,7 +2,7 @@
 "use strict";
 {
     // @ts-ignore
-    const C3 = self.C3;
+    const C3 = globalThis.C3;
     const spineBatcher = globalThis.spineBatcher;
     const spine = globalThis.spine
     
@@ -913,7 +913,7 @@
         GetScriptInterfaceClass()
 		{
             // @ts-ignore
-			return self.ISpineInstance;
+			return globalThis.ISpineInstance;
 		}
 
         _getData()
@@ -1317,13 +1317,13 @@
 	// caller using the script interface.
 	const map = new WeakMap();
     // @ts-ignore
-    self.ISpineInstance = class ISpineInstance extends self.IWorldInstance {
+    globalThis.ISpineInstance = class ISpineInstance extends globalThis.IWorldInstance {
 		constructor()
 		{
 			super();
             // Map by SDK instance
             // @ts-ignore
-			map.set(this, self.IInstance._GetInitInst().GetSdkInstance());
+			map.set(this, globalThis.IInstance._GetInitInst().GetSdkInstance());
             // @ts-ignore
 		}
 
