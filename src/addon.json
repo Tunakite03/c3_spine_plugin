@@ -1,9 +1,10 @@
 {
   "is-c3-addon": true,
+  "sdk-version": 2,
   "type": "plugin",
   "name": "Spine",
   "id": "Gritsenko_Spine",
-  "version": "2.9.1",
+  "version": "2.9.2",
   "author": "Mikal and Igor Gritsenko",
   "website": "https://gritsenko.github.io/c3_spine_plugin",
   "documentation": "https://gritsenko.github.io/c3_spine_plugin",
